@@ -1,5 +1,12 @@
 @use 'color_variables';
 @use 'mixins';
+@use "breakpoints";
+@use "sass:map";
+
+$smBreakpoint: map.get(breakpoints.$breakpoints, "sm");
+$md3Breakpoint: map.get(breakpoints.$breakpoints, "md3");
+$lgBreakpoint: map.get(breakpoints.$breakpoints, "lg");
+$xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 
 .pricing_card {
   width: 360px;
@@ -44,7 +51,7 @@
 
   }
 
-  .pricing_card__button {
+  &__button {
     display: block;
     width: 100%;
     background: color_variables.$btnBgColor;
@@ -66,15 +73,10 @@
     transform: scale(1.02);
   }
 
-  @include mixins.mediaMinAndMaxWith(900px, 1280px) {
-    width: 320px;
-
-  }
-
-  @include mixins.mediaMaxWith(1280px) {
+  @include mixins.mediaMaxWith($xlBreakpoint) {
     padding: 20px 15px;
 
-    .pricing_card__title {
+    &__title {
       padding-bottom: 20px;
     }
     .price__number {
@@ -84,52 +86,64 @@
 
   }
 
-  @include mixins.mediaMinAndMaxWith(900px, 1110px) {
+  @include mixins.mediaMinAndMaxWith($md3Breakpoint, $xlBreakpoint) {
+    width: 320px;
+  }
+
+  @include mixins.mediaMinAndMaxWith($md3Breakpoint, map.get(breakpoints.$breakpoints, "lg2")) {
     width: 300px;
     margin-right: 15px;
   }
 
-  @include mixins.mediaMinAndMaxWith(900px, 992px) {
+  @include mixins.mediaMinAndMaxWith($md3Breakpoint, $lgBreakpoint) {
     margin-right: 5px;
     padding: 10px 5px;
     width: 280px;
 
-    .pricing_card__title {
+    &__title {
       padding-bottom: 10px;
     }
 
   }
 
-  @include mixins.mediaMaxWith(992px) {
+  @include mixins.mediaMaxWith($lgBreakpoint) {
 
-    .pricing_card__title {
+    &__title {
       font-size: 20px;
     }
 
-    .pricing_card__price .price__number {
+    &__price .price__number {
       font-size: 32px;
     }
 
   }
 
 
-  @include mixins.mediaMaxWith(900px) {
+  @include mixins.mediaMaxWith($md3Breakpoint) {
     width: 60%;
     margin-right: 0;
     margin-bottom: 80px;
 
-    .pricing_card__featured_list {
-      display: flex;
-      flex-wrap: wrap;
-    }
 
     .pricing_card__button {
       width: 100%;
     }
   }
 
-  @include mixins.mediaMaxWith(820px) {
+  @include mixins.mediaMinAndMaxWith($smBreakpoint, $md3Breakpoint) {
+    .pricing_card__featured_list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @include mixins.mediaMaxWith(map.get(breakpoints.$breakpoints, "md2")) {
     width: 80%;
+  }
+
+  @include mixins.mediaMaxWith($smBreakpoint) {
+    width: 100%;
+    margin-bottom: 60px;
   }
 
 
@@ -167,7 +181,7 @@
 
   }
 
-  @include mixins.mediaMaxWith(900px) {
+  @include mixins.mediaMinAndMaxWith($smBreakpoint, $md3Breakpoint) {
     width: 50%;
     padding-right: 10px;
   }

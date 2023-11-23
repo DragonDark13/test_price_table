@@ -1,5 +1,7 @@
 @use "color_variables";
 @use "mixins";
+@use "breakpoints";
+@use "sass:map";
 
 body {
   font-family: Roboto, sans-serif;
@@ -25,16 +27,16 @@ h1 {
   margin-bottom: 100px;
   color: color_variables.$accentTextColor1;
 
-  @include mixins.mediaMaxWith(992px) {
+  @include mixins.mediaMaxWith(map.get(breakpoints.$breakpoints, "lg")) {
     font-size: 36px;
   }
 
-  @include mixins.mediaMaxWith(768px) {
+  @include mixins.mediaMaxWith(map.get(breakpoints.$breakpoints, "md")) {
     font-size: 28px;
   }
 
-  @include mixins.mediaMaxWith(576px) {
-    font-size: 24px;
+  @include mixins.mediaMaxWith(map.get(breakpoints.$breakpoints, "sm")) {
+    margin-bottom: 40px;
   }
 
 
