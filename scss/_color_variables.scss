@@ -5,5 +5,5 @@ $baseTextColor: #e4ebf9;
 $accentTextColor1: #fad1ff;
 $btnBgColor: #c9d5fd;
 $btnBgColorHover: darken($btnBgColor, 15%);
-$btnBgShadowColor: fade-in($btnBgColorHover, 0.39);
-$featuredListItemTextColor:fade-in($baseTextColor, .50);
+$btnBgShadowColor: rgba($btnBgColorHover, 0.39);
+$featuredListItemTextColor:rgba($baseTextColor, 0.50);

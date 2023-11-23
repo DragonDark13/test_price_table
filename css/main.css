@@ -1,6 +1,3 @@
-/**
- * @import "normalize"
- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -310,12 +307,6 @@ template {
   display: none;
 }
 
-/**
- * @import "color_variables";
- */
-/**
- * @import "fonts.scss";
- */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -346,9 +337,6 @@ template {
   font-weight: 500;
   src: url(../fonts/Playpen_Sans/PlaypenSans-Medium.ttf) format("truetype");
 }
-/**
- * @import "base.scss";
- */
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -406,12 +394,9 @@ button {
 }
 button:hover {
   background: #7f9cfa;
-  box-shadow: 1px 1px 0 1px #7f9cfa, -1px -1px 0 1px #7f9cfa;
+  box-shadow: 1px 1px 0 1px rgba(127, 156, 250, 0.39), -1px -1px 0 1px rgba(127, 156, 250, 0.39);
 }
 
-/**
- * @import "layout.scss";
- */
 .pricing_table_container {
   padding: 40px 0;
 }
@@ -422,9 +407,6 @@ button:hover {
   flex-wrap: wrap;
 }
 
-/**
- * @import "module.scss";
- */
 .pricing_card {
   width: 360px;
   background: #37414b;
@@ -446,8 +428,9 @@ button:hover {
   margin-top: 40px;
   margin-bottom: 30px;
 }
-.pricing_card__featured_list .featured_lit__item {
+.pricing_card__featured_list .featured_list__item {
   margin-bottom: 14px;
+  color: rgba(228, 235, 249, 0.5);
 }
 
 .pricing_card__price .price__number {
@@ -459,6 +442,24 @@ button:hover {
   font-size: 16px;
 }
 
+/**
+ * @import "normalize"
+ */
+/**
+ * @import "color_variables";
+ */
+/**
+ * @import "fonts.scss";
+ */
+/**
+ * @import "base.scss";
+ */
+/**
+ * @import "layout.scss";
+ */
+/**
+ * @import "module.scss";
+ */
 /**
  * @import "state.scss";
  */
