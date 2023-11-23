@@ -371,6 +371,7 @@ h1 {
   text-align: center;
   font-weight: 600;
   margin-bottom: 100px;
+  color: #fad1ff;
 }
 
 h3 {
@@ -385,6 +386,27 @@ h4 {
 
 button {
   cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 0;
+  box-shadow: none;
+  background: #c9d5fd;
+  color: #1d282d;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #7f9cfa;
+  box-shadow: 1px 1px 0 1px #7f9cfa, -1px -1px 0 1px #7f9cfa;
 }
 
 /**
@@ -409,18 +431,34 @@ button {
   margin-right: 24px;
   border-radius: 20px;
   padding: 40px 30px;
+  text-align: center;
 }
 .pricing_card:last-child {
   margin-right: 0;
 }
+.pricing_card__title {
+  margin: 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e4ebf9;
+}
+.pricing_card__featured_list {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.pricing_card__featured_list .featured_lit__item {
+  margin-bottom: 14px;
+}
 
 .pricing_card__price .price__number {
   font-weight: 900;
-  font-size: 36px;
+  font-size: 40px;
   text-transform: uppercase;
 }
 .pricing_card__price .price__description {
   font-size: 16px;
-} /**
+}
+
+/**
  * @import "state.scss";
  */
