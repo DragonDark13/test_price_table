@@ -432,6 +432,29 @@ button:hover {
   margin-bottom: 14px;
   color: rgba(228, 235, 249, 0.5);
 }
+.pricing_card__featured_list .featured_list__item .icon {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  transform: scale(var(--ggs, 1));
+  border-radius: 4px;
+}
+.pricing_card__featured_list .featured_list__item .icon:after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 3px;
+  top: -1px;
+  width: 6px;
+  height: 10px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+}
 
 .pricing_card__price .price__number {
   font-weight: 900;
@@ -447,6 +470,9 @@ button:hover {
  */
 /**
  * @import "color_variables";
+ */
+/**
+ * @import "mixins";
  */
 /**
  * @import "fonts.scss";
