@@ -1,0 +1,18 @@
+
+.pricing_card__price {
+
+  .price {
+
+    &__number {
+      font-weight: 900;
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+  }
+
+
+}

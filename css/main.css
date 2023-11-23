@@ -319,15 +319,70 @@ template {
   font-weight: normal;
   src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/Roboto/Roboto-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Playpen Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/Playpen_Sans/PlaypenSans-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Playpen Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Playpen_Sans/PlaypenSans-Medium.ttf) format("truetype");
+}
 /**
  * @import "base.scss";
  */
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: "Playpen Sans", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-weight: 900;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
 /**
  * @import "layout.scss";
  */
 /**
  * @import "module.scss";
  */
+.pricing_card__price .price__number {
+  font-weight: 900;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.pricing_card__price .price__description {
+  font-size: 16px;
+}
+
 /**
  * @import "state.scss";
  */
