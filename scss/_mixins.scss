@@ -1,0 +1,13 @@
+@mixin square($size:22px) {
+  width: $size;
+  height: $size;
+}
+
+@mixin iconBaseBlock {
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  @include square();
+  border: 2px solid transparent;
+  margin-right: 10px;
+}

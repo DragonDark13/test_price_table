@@ -428,20 +428,68 @@ button:hover {
   margin-top: 40px;
   margin-bottom: 30px;
 }
-.pricing_card__featured_list .featured_list__item {
+
+.featured_item {
   margin-bottom: 14px;
   color: rgba(228, 235, 249, 0.5);
+  display: flex;
+  align-items: center;
 }
-.pricing_card__featured_list .featured_list__item .icon {
+.featured_item:not(.featured_item--active) .featured_item__icon {
   position: relative;
   display: block;
+  transform: scale(var(--ggs, 1));
   width: 22px;
   height: 22px;
-  border: 2px solid;
-  transform: scale(var(--ggs, 1));
-  border-radius: 4px;
+  border: 2px solid transparent;
+  margin-right: 10px;
+  border-radius: 40px;
 }
-.pricing_card__featured_list .featured_list__item .icon:after {
+.featured_item:not(.featured_item--active) .featured_item__icon:after, .featured_item:not(.featured_item--active) .featured_item__icon:before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  top: 8px;
+  left: 1px;
+}
+.featured_item:not(.featured_item--active) .featured_item__icon:after {
+  transform: rotate(-45deg);
+}
+
+.pricing_card__price .price__number {
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.pricing_card__price .price__description {
+  font-size: 16px;
+}
+
+.featured_item--active {
+  color: #e4ebf9;
+}
+.featured_item--active .featured_item__icon {
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+}
+.featured_item--active .featured_item__icon:before {
+  display: none;
+}
+.featured_item--active .featured_item__icon:after {
   content: "";
   display: block;
   box-sizing: border-box;
@@ -454,15 +502,6 @@ button:hover {
   border-style: solid;
   transform-origin: bottom left;
   transform: rotate(45deg);
-}
-
-.pricing_card__price .price__number {
-  font-weight: 900;
-  font-size: 40px;
-  text-transform: uppercase;
-}
-.pricing_card__price .price__description {
-  font-size: 16px;
 }
 
 /**

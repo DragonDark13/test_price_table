@@ -7,6 +7,10 @@
  */
 @use "color_variables";
 /**
+ * @import "mixins";
+ */
+@use "mixins";
+/**
  * @import "fonts.scss";
  */
 @use "fonts";
