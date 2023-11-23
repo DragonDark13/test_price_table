@@ -19,13 +19,17 @@
 }
 
 @mixin mediaMaxWith($size) {
-   @media (max-width: $size) {
-     @content;
+  @media (max-width: $size) {
+    @content;
   }
 }
 
 @mixin mediaMinAndMaxWith($minSize,$maxSize) {
-   @media (max-width: $maxSize) and (min-width:$minSize) {
-     @content;
+  @media (max-width: $maxSize) and (min-width: $minSize) {
+    @content;
   }
+}
+
+@function sizeX($number) {
+  @return 8px *$number;
 }
