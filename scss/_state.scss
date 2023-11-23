@@ -31,3 +31,39 @@
   }
 
 }
+
+.pricing_card--highlight {
+  position: relative;
+
+  .pricing_card__title, .price__number {
+    color: color_variables.$accentTextColor1;
+  }
+
+  .pricing_card__label {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    margin: auto;
+    width: 127px;
+    padding: 12px;
+    background: color_variables.$accentTextColor1;
+    color: color_variables.$bgColor;
+    border-radius: 15px 15px 0 0;
+
+    h4 {
+      margin: 0;
+    }
+  }
+
+  .pricing_card__button {
+    background: color_variables.$accentTextColor1;
+
+    &:hover {
+      background: color_variables.$btnBgColorHover2;
+      @include mixins.btnBoxShadowHover(color_variables.$btnShadowColor2);
+    }
+  }
+
+}
