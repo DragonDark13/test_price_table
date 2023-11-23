@@ -10,7 +10,7 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 
 .pricing_card {
   width: 360px;
-  background: #37414b;
+  background: color_variables.$pricingCardBgColor;
   margin-right: 24px;
   border-radius: 20px;
   padding: 40px 30px;
@@ -164,7 +164,6 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
     &:before {
       content: "";
       display: block;
-      box-sizing: border-box;
       position: absolute;
       width: 16px;
       height: 2px;

@@ -6,6 +6,7 @@ $accentTextColor1: #fad1ff;
 $btnBgColor: #c9d5fd;
 $btnBgColorHover: darken($btnBgColor, 15%);
 $btnShadowColor: rgba($btnBgColorHover, 0.39);
-$featuredListItemTextColor:rgba($baseTextColor, 0.50);
+$featuredListItemTextColor: rgba($baseTextColor, 0.50);
 $btnBgColorHover2: darken($accentTextColor1, 15%);
 $btnShadowColor2: rgba($btnBgColorHover2, 0.39);
+$pricingCardBgColor: #37414b;
