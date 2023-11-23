@@ -24,6 +24,23 @@
     text-align: left;
     margin-top: 40px;
     margin-bottom: 30px;
+  }
+
+  &__price {
+
+    .price {
+
+      &__number {
+        font-weight: 900;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+
+      &__description {
+        font-size: 16px;
+      }
+    }
+
 
   }
 
@@ -48,6 +65,74 @@
   &:hover {
     transform: scale(1.02);
   }
+
+  @include mixins.mediaMinAndMaxWith(900px, 1280px) {
+    width: 320px;
+
+  }
+
+  @include mixins.mediaMaxWith(1280px) {
+    padding: 20px 15px;
+
+    .pricing_card__title {
+      padding-bottom: 20px;
+    }
+    .price__number {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  @include mixins.mediaMinAndMaxWith(900px, 1110px) {
+    width: 300px;
+    margin-right: 15px;
+  }
+
+  @include mixins.mediaMinAndMaxWith(900px, 992px) {
+    margin-right: 5px;
+    padding: 10px 5px;
+    width: 280px;
+
+    .pricing_card__title {
+      padding-bottom: 10px;
+    }
+
+  }
+
+  @include mixins.mediaMaxWith(992px) {
+
+    .pricing_card__title {
+      font-size: 20px;
+    }
+
+    .pricing_card__price .price__number {
+      font-size: 32px;
+    }
+
+  }
+
+
+  @include mixins.mediaMaxWith(900px) {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 80px;
+
+    .pricing_card__featured_list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .pricing_card__button {
+      width: 100%;
+    }
+  }
+
+  @include mixins.mediaMaxWith(820px) {
+    width: 80%;
+  }
+
+
 }
 
 .featured_item {
@@ -82,24 +167,12 @@
 
   }
 
-
-}
-
-
-.pricing_card__price {
-
-  .price {
-
-    &__number {
-      font-weight: 900;
-      font-size: 40px;
-      text-transform: uppercase;
-    }
-
-    &__description {
-      font-size: 16px;
-    }
+  @include mixins.mediaMaxWith(900px) {
+    width: 50%;
+    padding-right: 10px;
   }
 
 
 }
+
+

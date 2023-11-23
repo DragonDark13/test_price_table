@@ -1,3 +1,5 @@
+@use "mixins";
+
 .pricing_table_container {
   padding: 40px 0;
 }
@@ -6,4 +8,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @include mixins.mediaMaxWith(900px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }

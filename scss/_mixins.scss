@@ -17,3 +17,15 @@
 @mixin btnBoxShadowHover($shadowColor:color_variables.$btnShadowColor) {
   box-shadow: 1px 1px 0 1px $shadowColor, -1px -1px 0 1px $shadowColor;
 }
+
+@mixin mediaMaxWith($size) {
+   @media (max-width: $size) {
+     @content;
+  }
+}
+
+@mixin mediaMinAndMaxWith($minSize,$maxSize) {
+   @media (max-width: $maxSize) and (min-width:$minSize) {
+     @content;
+  }
+}
