@@ -1,3 +1,7 @@
+/**
+ * start "layout.scss";
+ */
+
 @use "mixins";
 @use "breakpoints";
 @use "sass:map";
@@ -17,3 +21,6 @@
     align-items: center;
   }
 }
+/**
+ * end "layout.scss";
+ */

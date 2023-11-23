@@ -307,6 +307,9 @@ template {
   display: none;
 }
 
+/**
+ * start "fonts.scss";
+ */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -337,6 +340,12 @@ template {
   font-weight: 500;
   src: url(../fonts/Playpen_Sans/PlaypenSans-Medium.ttf) format("truetype");
 }
+/**
+ * end "fonts.scss";
+ */
+/**
+ * start "base.scss";
+ */
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -388,6 +397,12 @@ button {
   box-shadow: none;
 }
 
+/**
+ * end "base.scss";
+ */
+/**
+ * start "layout.scss";
+ */
 .pricing_table_container {
   padding: 40px 16px;
 }
@@ -402,8 +417,12 @@ button {
     flex-direction: column;
     align-items: center;
   }
-}
-
+} /**
+ * end "layout.scss";
+ */
+/**
+ * start "module.scss";
+ */
 .pricing_card {
   width: 360px;
   background: #37414b;
@@ -560,6 +579,12 @@ button {
   }
 }
 
+/**
+ * end "module.scss";
+ */
+/**
+ * start "state.scss";
+ */
 .featured_item--active {
   color: #e4ebf9;
 }
@@ -571,8 +596,6 @@ button {
   height: 22px;
   border: 2px solid transparent;
   margin-right: 10px;
-  width: 22px;
-  height: 22px;
   border-radius: 100px;
 }
 .featured_item--active .featured_item__icon:before {
@@ -624,26 +647,5 @@ button {
 }
 
 /**
- * @import "normalize"
- */
-/**
- * @import "color_variables";
- */
-/**
- * @import "mixins";
- */
-/**
- * @import "fonts.scss";
- */
-/**
- * @import "base.scss";
- */
-/**
- * @import "layout.scss";
- */
-/**
- * @import "module.scss";
- */
-/**
- * @import "state.scss";
+ * end "state.scss";
  */

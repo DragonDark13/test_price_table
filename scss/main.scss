@@ -1,33 +1,12 @@
-/**
- * @import "normalize"
- */
 @use "normalize";
-/**
- * @import "color_variables";
- */
+
 @use "color_variables";
-/**
- * @import "mixins";
- */
 @use "mixins";
-/**
- * @import "fonts.scss";
- */
 @use "fonts";
-/**
- * @import "base.scss";
- */
 @use "base";
-/**
- * @import "layout.scss";
- */
+
 @use "layout";
-/**
- * @import "module.scss";
- */
 @use "module";
-/**
- * @import "state.scss";
- */
+
 @use "state";
 

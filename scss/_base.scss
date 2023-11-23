@@ -1,3 +1,7 @@
+/**
+ * start "base.scss";
+ */
+
 @use "color_variables";
 @use "mixins";
 @use "breakpoints";
@@ -53,3 +57,6 @@ button {
 }
 
 
+/**
+ * end "base.scss";
+ */
