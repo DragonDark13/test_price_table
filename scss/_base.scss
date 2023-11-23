@@ -36,9 +36,8 @@ h1 {
   }
 
   @include mixins.mediaMaxWith(map.get(breakpoints.$breakpoints, "sm")) {
-    margin-bottom: 40px;
+    margin-bottom: mixins.sizeX(5);
   }
-
 
 }
 

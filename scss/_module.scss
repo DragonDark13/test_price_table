@@ -11,9 +11,9 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 .pricing_card {
   width: 360px;
   background: color_variables.$pricingCardBgColor;
-  margin-right: 24px;
-  border-radius: 20px;
-  padding: 40px 30px;
+  margin-right: mixins.sizeX(3);
+  border-radius: mixins.sizeX(3);
+  padding: mixins.sizeX(5) mixins.sizeX(4);
   text-align: center;
   transition: 0.3s;
 
@@ -23,14 +23,14 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 
   &__title {
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: mixins.sizeX(5);
     border-bottom: 1px solid color_variables.$baseTextColor;
   }
 
   &__featured_list {
     text-align: left;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: mixins.sizeX(5);
+    margin-bottom: mixins.sizeX(4);
   }
 
   &__price {
@@ -58,7 +58,7 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
     color: color_variables.$bgColor;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius:  mixins.sizeX(3);
     text-align: center;
     padding: 16px;
     transition: all 0.3s;
@@ -74,14 +74,14 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
   }
 
   @include mixins.mediaMaxWith($xlBreakpoint) {
-    padding: 20px 15px;
+    padding:  mixins.sizeX(3) mixins.sizeX(2);
 
     &__title {
-      padding-bottom: 20px;
+      padding-bottom:  mixins.sizeX(3);
     }
     .price__number {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top:  mixins.sizeX(3);
+      margin-bottom:  mixins.sizeX(3);
     }
 
   }
@@ -92,7 +92,7 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 
   @include mixins.mediaMinAndMaxWith($md3Breakpoint, map.get(breakpoints.$breakpoints, "lg2")) {
     width: 300px;
-    margin-right: 15px;
+    margin-right: mixins.sizeX(2);
   }
 
   @include mixins.mediaMinAndMaxWith($md3Breakpoint, $lgBreakpoint) {
@@ -150,7 +150,7 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 }
 
 .featured_item {
-  margin-bottom: 14px;
+  margin-bottom: mixins.sizeX(2);
   color: color_variables.$featuredListItemTextColor;
   display: flex;
   align-items: center;
@@ -158,7 +158,7 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 
   &:not(.featured_item--active) &__icon {
     @include mixins.iconBaseBlock;
-    border-radius: 40px;
+    border-radius: mixins.sizeX(5);
 
     &:after,
     &:before {

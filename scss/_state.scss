@@ -50,7 +50,7 @@
     padding: 12px;
     background: color_variables.$accentTextColor1;
     color: color_variables.$bgColor;
-    border-radius: 15px 15px 0 0;
+    border-radius: mixins.sizeX(2) mixins.sizeX(2) 0 0;
 
     h4 {
       margin: 0;

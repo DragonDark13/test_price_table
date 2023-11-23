@@ -4,7 +4,7 @@
 
 
 .pricing_table_container {
-  padding: 40px 15px;
+  padding: mixins.sizeX(5) mixins.sizeX(2);
 }
 
 .pricing_table {
