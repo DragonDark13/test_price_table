@@ -311,6 +311,9 @@ template {
 }
 
 /**
+ * @import "color_variables";
+ */
+/**
  * @import "fonts.scss";
  */
 @font-face {
@@ -349,6 +352,17 @@ template {
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
+  background: #1d282d;
+  color: #e4ebf9;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 h1 {
@@ -356,6 +370,7 @@ h1 {
   font-size: 40px;
   text-align: center;
   font-weight: 600;
+  margin-bottom: 100px;
 }
 
 h3 {
@@ -368,12 +383,37 @@ h4 {
   text-transform: uppercase;
 }
 
+button {
+  cursor: pointer;
+}
+
 /**
  * @import "layout.scss";
  */
+.pricing_table_container {
+  padding: 40px 0;
+}
+
+.pricing_table {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /**
  * @import "module.scss";
  */
+.pricing_card {
+  width: 360px;
+  background: #37414b;
+  margin-right: 24px;
+  border-radius: 20px;
+  padding: 40px 30px;
+}
+.pricing_card:last-child {
+  margin-right: 0;
+}
+
 .pricing_card__price .price__number {
   font-weight: 900;
   font-size: 36px;
@@ -381,8 +421,6 @@ h4 {
 }
 .pricing_card__price .price__description {
   font-size: 16px;
-}
-
-/**
+} /**
  * @import "state.scss";
  */

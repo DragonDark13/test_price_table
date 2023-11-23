@@ -1,3 +1,14 @@
+.pricing_card {
+  width: 360px;
+  background: #37414b;
+  margin-right: 24px;
+  border-radius: 20px;
+  padding: 40px 30px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
 
 .pricing_card__price {
 

@@ -3,9 +3,13 @@
  */
 @import "normalize";
 /**
+ * @import "color_variables";
+ */
+@import "color_variables";
+/**
  * @import "fonts.scss";
  */
-@import "fonts.scss";
+@import "fonts";
 /**
  * @import "base.scss";
  */
