@@ -366,35 +366,11 @@ h3 {
   font-size: 28px;
 }
 
-h4 {
-  font-weight: 900;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
 button {
   cursor: pointer;
-}
-
-button {
-  cursor: pointer;
-  display: block;
-  width: 100%;
   outline: none;
   border: 0;
   box-shadow: none;
-  background: #c9d5fd;
-  color: #1d282d;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 20px;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s;
-}
-button:hover {
-  background: #7f9cfa;
-  box-shadow: 1px 1px 0 1px rgba(127, 156, 250, 0.39), -1px -1px 0 1px rgba(127, 156, 250, 0.39);
 }
 
 .pricing_table_container {
@@ -427,6 +403,22 @@ button:hover {
   text-align: left;
   margin-top: 40px;
   margin-bottom: 30px;
+}
+.pricing_card .pricing_card__button {
+  display: block;
+  width: 100%;
+  background: #c9d5fd;
+  color: #1d282d;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s;
+}
+.pricing_card .pricing_card__button:hover {
+  background: #7f9cfa;
+  box-shadow: 1px 1px 0 1px rgba(127, 156, 250, 0.39), -1px -1px 0 1px rgba(127, 156, 250, 0.39);
 }
 
 .featured_item {
@@ -502,6 +494,36 @@ button:hover {
   border-style: solid;
   transform-origin: bottom left;
   transform: rotate(45deg);
+}
+
+.pricing_card--highlight {
+  position: relative;
+}
+.pricing_card--highlight .pricing_card__title, .pricing_card--highlight .price__number {
+  color: #fad1ff;
+}
+.pricing_card--highlight .pricing_card__label {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  margin: auto;
+  width: 127px;
+  padding: 12px;
+  background: #fad1ff;
+  color: #1d282d;
+  border-radius: 15px 15px 0 0;
+}
+.pricing_card--highlight .pricing_card__label h4 {
+  margin: 0;
+}
+.pricing_card--highlight .pricing_card__button {
+  background: #fad1ff;
+}
+.pricing_card--highlight .pricing_card__button:hover {
+  background: #f285ff;
+  box-shadow: 1px 1px 0 1px rgba(242, 133, 255, 0.39), -1px -1px 0 1px rgba(242, 133, 255, 0.39);
 }
 
 /**
