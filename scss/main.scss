@@ -1,29 +1,29 @@
 /**
  * @import "normalize"
  */
-@import "normalize";
+@use "normalize";
 /**
  * @import "color_variables";
  */
-@import "color_variables";
+@use "color_variables";
 /**
  * @import "fonts.scss";
  */
-@import "fonts";
+@use "fonts";
 /**
  * @import "base.scss";
  */
-@import "base";
+@use "base";
 /**
  * @import "layout.scss";
  */
-@import "layout";
+@use "layout";
 /**
  * @import "module.scss";
  */
-@import "module";
+@use "module";
 /**
  * @import "state.scss";
  */
-@import "state";
+@use "state";
 
