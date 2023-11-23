@@ -361,6 +361,21 @@ h1 {
   margin-bottom: 100px;
   color: #fad1ff;
 }
+@media (max-width: 992px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    margin-bottom: 40px;
+  }
+}
 
 h3 {
   font-size: 28px;
@@ -374,7 +389,7 @@ button {
 }
 
 .pricing_table_container {
-  padding: 40px 0;
+  padding: 40px 15px;
 }
 
 .pricing_table {
@@ -419,7 +434,7 @@ button {
 .pricing_card__price .price__description {
   font-size: 16px;
 }
-.pricing_card .pricing_card__button {
+.pricing_card__button {
   display: block;
   width: 100%;
   background: #c9d5fd;
@@ -431,28 +446,28 @@ button {
   padding: 16px;
   transition: all 0.3s;
 }
-.pricing_card .pricing_card__button:hover {
+.pricing_card__button:hover {
   background: #7f9cfa;
   box-shadow: 1px 1px 0 1px rgba(127, 156, 250, 0.39), -1px -1px 0 1px rgba(127, 156, 250, 0.39);
 }
 .pricing_card:hover {
   transform: scale(1.02);
 }
-@media (max-width: 1280px) and (min-width: 900px) {
-  .pricing_card {
-    width: 320px;
-  }
-}
 @media (max-width: 1280px) {
   .pricing_card {
     padding: 20px 15px;
   }
-  .pricing_card .pricing_card__title {
+  .pricing_card__title {
     padding-bottom: 20px;
   }
   .pricing_card .price__number {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 1280px) and (min-width: 900px) {
+  .pricing_card {
+    width: 320px;
   }
 }
 @media (max-width: 1110px) and (min-width: 900px) {
@@ -467,15 +482,15 @@ button {
     padding: 10px 5px;
     width: 280px;
   }
-  .pricing_card .pricing_card__title {
+  .pricing_card__title {
     padding-bottom: 10px;
   }
 }
 @media (max-width: 992px) {
-  .pricing_card .pricing_card__title {
+  .pricing_card__title {
     font-size: 20px;
   }
-  .pricing_card .pricing_card__price .price__number {
+  .pricing_card__price .price__number {
     font-size: 32px;
   }
 }
@@ -485,17 +500,25 @@ button {
     margin-right: 0;
     margin-bottom: 80px;
   }
+  .pricing_card .pricing_card__button {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) and (min-width: 576px) {
   .pricing_card .pricing_card__featured_list {
     display: flex;
     flex-wrap: wrap;
-  }
-  .pricing_card .pricing_card__button {
-    width: 100%;
   }
 }
 @media (max-width: 820px) {
   .pricing_card {
     width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .pricing_card {
+    width: 100%;
+    margin-bottom: 60px;
   }
 }
 
@@ -531,7 +554,7 @@ button {
 .featured_item:not(.featured_item--active) .featured_item__icon:after {
   transform: rotate(-45deg);
 }
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 576px) {
   .featured_item {
     width: 50%;
     padding-right: 10px;
