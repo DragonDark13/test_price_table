@@ -1,5 +1,9 @@
+@use 'sass:color';
+
 $bgColor: #1d282d;
 $baseTextColor: #e4ebf9;
 $accentTextColor1: #fad1ff;
 $btnBgColor: #c9d5fd;
-$btnBgColorHover: darken($btnBgColor,15%);
+$btnBgColorHover: darken($btnBgColor, 15%);
+$btnBgShadowColor: fade-in($btnBgColorHover, 0.39);
+$featuredListItemTextColor:fade-in($baseTextColor, .50);
