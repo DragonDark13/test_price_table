@@ -390,6 +390,7 @@ button {
   border-radius: 20px;
   padding: 40px 30px;
   text-align: center;
+  transition: 0.3s;
 }
 .pricing_card:last-child {
   margin-right: 0;
@@ -419,6 +420,9 @@ button {
 .pricing_card .pricing_card__button:hover {
   background: #7f9cfa;
   box-shadow: 1px 1px 0 1px rgba(127, 156, 250, 0.39), -1px -1px 0 1px rgba(127, 156, 250, 0.39);
+}
+.pricing_card:hover {
+  transform: scale(1.02);
 }
 
 .featured_item {

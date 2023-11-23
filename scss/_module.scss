@@ -8,6 +8,7 @@
   border-radius: 20px;
   padding: 40px 30px;
   text-align: center;
+  transition: 0.3s;
 
   &:last-child {
     margin-right: 0;
@@ -42,6 +43,10 @@
       background: color_variables.$btnBgColorHover;
       @include mixins.btnBoxShadowHover();
     }
+  }
+
+  &:hover {
+    transform: scale(1.02);
   }
 }
 
