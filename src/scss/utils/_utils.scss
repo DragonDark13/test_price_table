@@ -1,0 +1,11 @@
+@function sizeX($number) {
+  @return 8px *$number;
+}
+
+@function getBtnHoverColor($color) {
+  @return darken($color, 15%);
+}
+
+@function getBtnBoxShadowColor($color) {
+  @return rgba($color, 0.39);
+}

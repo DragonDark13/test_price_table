@@ -4,6 +4,7 @@
 
 @use "../variables/color_variables";
 @use "../mixins/mixins";
+@use "../utils/utils";
 
 .featured_item--active {
   color: color_variables.$baseTextColor;
@@ -52,8 +53,8 @@
     width: 127px;
     padding: 12px;
     background: color_variables.$accentTextColor1;
-    color: color_variables.$bgColor;
-    border-radius: mixins.sizeX(2) mixins.sizeX(2) 0 0;
+    color: color_variables.$pageBgColor;
+    border-radius: utils.sizeX(2) utils.sizeX(2) 0 0;
 
     h4 {
       margin: 0;
@@ -64,8 +65,8 @@
     background: color_variables.$accentTextColor1;
 
     &:hover {
-      background: color_variables.$btnBgColorHover2;
-      @include mixins.btnBoxShadowHover(color_variables.$btnShadowColor2);
+      background: color_variables.$btnPrimaryBgColorHover;
+      @include mixins.btnBoxShadowHover(color_variables.$btnPrimaryShadowColor);
     }
   }
 

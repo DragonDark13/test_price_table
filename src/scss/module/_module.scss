@@ -6,6 +6,8 @@
 @use '../mixins/mixins';
 @use "../variables/breakpoints";
 @use "sass:map";
+@use "../utils/utils";
+
 
 $smBreakpoint: map.get(breakpoints.$breakpoints, "sm");
 $md3Breakpoint: map.get(breakpoints.$breakpoints, "md3");
@@ -15,9 +17,9 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 .pricing_card {
   width: 360px;
   background: color_variables.$pricingCardBgColor;
-  margin-right: mixins.sizeX(3);
-  border-radius: mixins.sizeX(3);
-  padding: mixins.sizeX(5) mixins.sizeX(4);
+  margin-right: utils.sizeX(3);
+  border-radius: utils.sizeX(3);
+  padding: utils.sizeX(5) utils.sizeX(4);
   text-align: center;
   transition: 0.3s;
 
@@ -27,14 +29,14 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 
   &__title {
     margin: 0;
-    padding-bottom: mixins.sizeX(5);
+    padding-bottom: utils.sizeX(5);
     border-bottom: 1px solid color_variables.$baseTextColor;
   }
 
   &__featured_list {
     text-align: left;
-    margin-top: mixins.sizeX(5);
-    margin-bottom: mixins.sizeX(4);
+    margin-top: utils.sizeX(5);
+    margin-bottom: utils.sizeX(4);
   }
 
   &__price {
@@ -58,17 +60,17 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
   &__button {
     display: block;
     width: 100%;
-    background: color_variables.$btnBgColor;
-    color: color_variables.$bgColor;
+    background: color_variables.$btnDefaultBgColor;
+    color: color_variables.$pageBgColor;
     font-size: 18px;
     font-weight: 600;
-    border-radius: mixins.sizeX(3);
+    border-radius: utils.sizeX(3);
     text-align: center;
     padding: 16px;
     transition: all 0.3s;
 
     &:hover {
-      background: color_variables.$btnBgColorHover;
+      background: color_variables.$btnDefaultBgColorHover;
       @include mixins.btnBoxShadowHover();
     }
   }
@@ -78,14 +80,14 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
   }
 
   @include mixins.mediaMaxWith($xlBreakpoint) {
-    padding: mixins.sizeX(3) mixins.sizeX(2);
+    padding: utils.sizeX(3) utils.sizeX(2);
 
     &__title {
-      padding-bottom: mixins.sizeX(3);
+      padding-bottom: utils.sizeX(3);
     }
     .price__number {
-      margin-top: mixins.sizeX(3);
-      margin-bottom: mixins.sizeX(3);
+      margin-top: utils.sizeX(3);
+      margin-bottom: utils.sizeX(3);
     }
 
   }
@@ -96,7 +98,7 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 
   @include mixins.mediaMinAndMaxWith($md3Breakpoint, map.get(breakpoints.$breakpoints, "lg2")) {
     width: 300px;
-    margin-right: mixins.sizeX(2);
+    margin-right: utils.sizeX(2);
   }
 
   @include mixins.mediaMinAndMaxWith($md3Breakpoint, $lgBreakpoint) {
@@ -154,7 +156,7 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 }
 
 .featured_item {
-  margin-bottom: mixins.sizeX(2);
+  margin-bottom: utils.sizeX(2);
   color: color_variables.$featuredListItemTextColor;
   display: flex;
   align-items: center;
@@ -162,7 +164,7 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
 
   &:not(.featured_item--active) &__icon {
     @include mixins.iconBaseBlock;
-    border-radius: mixins.sizeX(5);
+    border-radius: utils.sizeX(5);
 
     &:after,
     &:before {

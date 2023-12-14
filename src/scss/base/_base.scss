@@ -6,11 +6,12 @@
 @use "../mixins/mixins";
 @use "../variables/breakpoints";
 @use "sass:map";
+@use "../utils/utils";
 
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  background: color_variables.$bgColor;
+  background: color_variables.$pageBgColor;
   color: color_variables.$baseTextColor;
 }
 
@@ -40,7 +41,7 @@ h1 {
   }
 
   @include mixins.mediaMaxWith(map.get(breakpoints.$breakpoints, "sm")) {
-    margin-bottom: mixins.sizeX(5);
+    margin-bottom: utils.sizeX(5);
   }
 
 }

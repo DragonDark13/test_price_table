@@ -5,10 +5,12 @@
 @use "../mixins/mixins";
 @use "../variables/breakpoints";
 @use "sass:map";
+@use "../utils/utils";
+
 
 
 .pricing_table_container {
-  padding: mixins.sizeX(5) mixins.sizeX(2);
+  padding: utils.sizeX(5) utils.sizeX(2);
 }
 
 .pricing_table {

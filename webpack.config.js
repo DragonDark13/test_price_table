@@ -11,6 +11,7 @@ module.exports = {
         filename: 'main.js',
         clean: true,
     },
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -19,6 +20,9 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                        },
                     },
                     {
                         loader: 'postcss-loader',
@@ -30,6 +34,12 @@ module.exports = {
                                     ['autoprefixer', {}],
                                 ],
                             },
+                            sourceMap: true,
+                        },
+                    },
+                    {
+                        loader: 'resolve-url-loader',
+                        options: {
                             sourceMap: true,
                         },
                     },
