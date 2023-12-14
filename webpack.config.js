@@ -20,6 +20,19 @@ module.exports = {
                     {
                         loader: 'css-loader',
                     },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                // Your PostCSS plugins and their options go here
+                                plugins: [
+                                    // Autoprefixer
+                                    ['autoprefixer', {}],
+                                ],
+                            },
+                            sourceMap: true,
+                        },
+                    },
                     'sass-loader'
                 ],
             },
