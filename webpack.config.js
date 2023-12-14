@@ -30,7 +30,9 @@ module.exports = {
             new CssMinimizerPlugin(),
         ],
     },
-    plugins: [new MiniCssExtractPlugin(),
+    plugins: [new MiniCssExtractPlugin({
+        filename: 'css/main.css',
+    }),
         new CopyWebpackPlugin({
             patterns: [
                 {from: 'src/index.html', to: 'index.html'}
