@@ -4,6 +4,7 @@
 
 @use '../variables/color_variables';
 @use '../mixins/mixins';
+@use '../mixins/buttons';
 @use "../variables/breakpoints";
 @use "sass:map";
 @use "../utils/utils";
@@ -70,8 +71,7 @@ $xlBreakpoint: map.get(breakpoints.$breakpoints, "xl");
     transition: all 0.3s;
 
     &:hover {
-      background: color_variables.$btnDefaultBgColorHover;
-      @include mixins.btnBoxShadowHover();
+         @include buttons.btnDefaultHoverStyle;
     }
   }
 

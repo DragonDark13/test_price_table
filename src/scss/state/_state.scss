@@ -5,6 +5,7 @@
 @use "../variables/color_variables";
 @use "../mixins/mixins";
 @use "../utils/utils";
+@use "../mixins/buttons";
 
 .featured_item--active {
   color: color_variables.$baseTextColor;
@@ -62,11 +63,10 @@
   }
 
   .pricing_card__button {
-    background: color_variables.$accentTextColor1;
+    background: color_variables.$btnPrimaryBgColor;
 
     &:hover {
-      background: color_variables.$btnPrimaryBgColorHover;
-      @include mixins.btnBoxShadowHover(color_variables.$btnPrimaryShadowColor);
+      @include buttons.btnPrimaryHoverStyle;
     }
   }
 
