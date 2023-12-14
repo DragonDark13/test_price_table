@@ -14,6 +14,7 @@ $btnDefaultBgColorHover: utils.getBtnHoverColor($btnDefaultBgColor);
 $btnDefaultShadowColor: utils.getBtnHoverColor($btnDefaultBgColorHover);
 
 // Button Primary Colors
+$btnPrimaryBgColor:$accentTextColor1;
 $btnPrimaryBgColorHover: utils.getBtnHoverColor($accentTextColor1);
 $btnPrimaryShadowColor: utils.getBtnHoverColor($btnPrimaryBgColorHover);
 
