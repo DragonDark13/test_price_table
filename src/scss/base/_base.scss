@@ -2,9 +2,9 @@
  * start "base.scss";
  */
 
-@use "color_variables";
-@use "mixins";
-@use "breakpoints";
+@use "../variables/color_variables";
+@use "../mixins/mixins";
+@use "../variables/breakpoints";
 @use "sass:map";
 
 body {

@@ -2,8 +2,8 @@
  * start "layout.scss";
  */
 
-@use "mixins";
-@use "breakpoints";
+@use "../mixins/mixins";
+@use "../variables/breakpoints";
 @use "sass:map";
 
 

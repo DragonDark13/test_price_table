@@ -2,8 +2,8 @@
  * start "state.scss";
  */
 
-@use "color_variables";
-@use "mixins";
+@use "../variables/color_variables";
+@use "../mixins/mixins";
 
 .featured_item--active {
   color: color_variables.$baseTextColor;

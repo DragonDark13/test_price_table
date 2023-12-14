@@ -1,9 +1,9 @@
-@use "normalize";
-@use "color_variables";
-@use "mixins";
-@use "fonts";
-@use "base";
-@use "layout";
-@use "module";
-@use "state";
+@use "normalize/normalize";
+@use "variables/color_variables";
+@use "mixins/mixins";
+@use "fonts/fonts";
+@use "base/base";
+@use "layout/layout";
+@use "module/module";
+@use "state/state";
 

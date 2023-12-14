@@ -1,4 +1,4 @@
-@use "color_variables";
+@use "../variables/color_variables";
 
 @mixin square($size:22px) {
   width: $size;
