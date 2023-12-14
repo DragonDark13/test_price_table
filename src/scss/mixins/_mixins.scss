@@ -14,9 +14,7 @@
   margin-right: 10px;
 }
 
-@mixin btnBoxShadowHover($shadowColor:color_variables.$btnDefaultShadowColor) {
-  box-shadow: 1px 1px 0 1px $shadowColor, -1px -1px 0 1px $shadowColor;
-}
+
 
 @mixin mediaMaxWith($size) {
   @media (max-width: $size) {
