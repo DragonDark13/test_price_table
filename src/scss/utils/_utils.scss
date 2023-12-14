@@ -1,3 +1,7 @@
+/**
+ * start "utils.scss";
+ */
+
 @function sizeX($number) {
   @return 8px *$number;
 }
@@ -9,3 +13,7 @@
 @function getBtnBoxShadowColor($color) {
   @return rgba($color, 0.39);
 }
+
+/**
+ * end "utils.scss";
+ */
