@@ -1,5 +1,6 @@
 {
   "name": "test_price_table",
+  "homepage": "https://dragondark13.github.io/test_price_table",
   "version": "1.0.0",
   "description": "test task",
   "main": "index.js",
@@ -7,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --watch --mode development",
     "build": "webpack --mode production",
-    "start": "webpack serve --open --hot --live-reload --mode development"
+    "start": "webpack serve --open --hot --live-reload --mode development",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -32,5 +34,8 @@
     "> 1%",
     "iOS 7",
     "last 3 iOS versions"
-  ]
+  ],
+  "dependencies": {
+    "gh-pages": "^6.1.0"
+  }
 }
