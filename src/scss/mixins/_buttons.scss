@@ -1,0 +1,16 @@
+@use '../variables/color_variables';
+@use '../mixins/mixins';
+
+@mixin btnBoxShadowHover($shadowColor:color_variables.$btnDefaultShadowColor) {
+  box-shadow: 1px 1px 0 1px $shadowColor, -1px -1px 0 1px $shadowColor;
+}
+
+@mixin btnDefaultHoverStyle {
+  background: color_variables.$btnDefaultBgColorHover;
+  @include btnBoxShadowHover();
+}
+
+@mixin btnPrimaryHoverStyle {
+  background: color_variables.$btnPrimaryBgColorHover;
+  @include btnBoxShadowHover(color_variables.$btnPrimaryShadowColor);
+}
